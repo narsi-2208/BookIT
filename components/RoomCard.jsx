@@ -24,15 +24,13 @@ const RoomCard = ({ room }) => {
         <div className="space-y-1">
           <h4 className="text-lg font-semibold">{room.name}</h4>
           <p className="text-sm text-gray-600">
-            <span className="font-semibold text-gray-800"> {room.address}</span> 555
-            California St, San Francisco, CA 94104
+            <span className="font-semibold text-gray-800"> {room.address}</span>
           </p>
           <p className="text-sm text-gray-600">
             <span className="font-semibold text-gray-800">{room.availability}</span>
-            9 AM - 5 PM
           </p>
           <p className="text-sm text-gray-600">
-            <span className="font-semibold text-gray-800">$ {room.price_per_hour}</span>
+            <span className="font-semibold text-gray-800">₹ {room.price_per_hour}</span>
             /hour
           </p>
         </div>

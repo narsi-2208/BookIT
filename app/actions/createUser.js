@@ -35,6 +35,7 @@ async function createUser(previousState, formData) {
         //Create user
         await account.create(ID.unique(), email, password, name);
 
+
         return {
             success: true
         }

@@ -34,6 +34,7 @@ async function bookRoom(previousState, formData) {
         const checkInTime = formData.get('check_in_time');
         const checkOutDate = formData.get('check_out_date');
         const checkOutTime = formData.get('check_out_time');
+        const phoneNumber = formData.get('phone_number');
         const roomId = formData.get('room_id');
 
         //Combine date and time to ISO 8601 format
@@ -44,7 +45,8 @@ async function bookRoom(previousState, formData) {
         const isAvailable = await checkRoomAvailability(
             roomId,
             checkInDateTime,
-            checkOutDateTime
+            checkOutDateTime,
+            phoneNumber
         );
 
         if (!isAvailable) {

@@ -86,6 +86,21 @@ const BookingForm = ({ room }) => {
               required
             />
           </div>
+          <div>
+          <label
+              htmlFor="phone"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Phone Number
+            </label>
+            <input
+              type="number"
+              id="phone_number"
+              name="phone_number"
+              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              required
+            />
+          </div>
         </div>
 
         <div className="mt-6">
